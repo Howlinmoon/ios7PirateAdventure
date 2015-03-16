@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A9C89E4A-340C-4D02-B958-171B6792ACE2</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Pirate Adventure</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>BFC1A0A5-D625-47D5-B46B-19B64F8E66D5</key>
+		<string>https://github.com/Howlinmoon/ios7PirateAdventure.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Pirate Adventure.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>BFC1A0A5-D625-47D5-B46B-19B64F8E66D5</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Howlinmoon/ios7PirateAdventure.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>BFC1A0A5-D625-47D5-B46B-19B64F8E66D5</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>BFC1A0A5-D625-47D5-B46B-19B64F8E66D5</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Pirate Adventure</string>
+		</dict>
+	</array>
+</dict>
+</plist>
