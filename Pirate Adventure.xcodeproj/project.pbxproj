@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		967251C81AB893EA002EDAC1 /* Title.m in Sources */ = {isa = PBXBuildFile; fileRef = 967251C71AB893EA002EDAC1 /* Title.m */; };
 		96B13C9F1AB349B100CD3790 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B13C9E1AB349B100CD3790 /* Foundation.framework */; };
 		96B13CA11AB349B100CD3790 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B13CA01AB349B100CD3790 /* CoreGraphics.framework */; };
 		96B13CA31AB349B100CD3790 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B13CA21AB349B100CD3790 /* UIKit.framework */; };
@@ -22,6 +21,8 @@
 		96B13CC01AB349B200CD3790 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B13CA21AB349B100CD3790 /* UIKit.framework */; };
 		96B13CC81AB349B200CD3790 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 96B13CC61AB349B200CD3790 /* InfoPlist.strings */; };
 		96B13CCA1AB349B200CD3790 /* Pirate_AdventureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B13CC91AB349B200CD3790 /* Pirate_AdventureTests.m */; };
+		96B5C9FF1ABB313600508580 /* Factory.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B5C9FE1ABB313600508580 /* Factory.m */; };
+		96B5CA021ABB343700508580 /* Tile.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B5CA011ABB343700508580 /* Tile.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,8 +36,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		967251C61AB893EA002EDAC1 /* Title.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Title.h; sourceTree = "<group>"; };
-		967251C71AB893EA002EDAC1 /* Title.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Title.m; sourceTree = "<group>"; };
 		96B13C9B1AB349B100CD3790 /* Pirate Adventure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pirate Adventure.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96B13C9E1AB349B100CD3790 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		96B13CA01AB349B100CD3790 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -56,6 +55,10 @@
 		96B13CC51AB349B200CD3790 /* Pirate AdventureTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Pirate AdventureTests-Info.plist"; sourceTree = "<group>"; };
 		96B13CC71AB349B200CD3790 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		96B13CC91AB349B200CD3790 /* Pirate_AdventureTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pirate_AdventureTests.m; sourceTree = "<group>"; };
+		96B5C9FD1ABB313600508580 /* Factory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Factory.h; sourceTree = "<group>"; };
+		96B5C9FE1ABB313600508580 /* Factory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Factory.m; sourceTree = "<group>"; };
+		96B5CA001ABB343700508580 /* Tile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tile.h; sourceTree = "<group>"; };
+		96B5CA011ABB343700508580 /* Tile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tile.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,8 +88,10 @@
 		967251C51AB893A7002EDAC1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				967251C61AB893EA002EDAC1 /* Title.h */,
-				967251C71AB893EA002EDAC1 /* Title.m */,
+				96B5C9FD1ABB313600508580 /* Factory.h */,
+				96B5C9FE1ABB313600508580 /* Factory.m */,
+				96B5CA001ABB343700508580 /* Tile.h */,
+				96B5CA011ABB343700508580 /* Tile.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -127,9 +132,9 @@
 				96B13CAD1AB349B100CD3790 /* AppDelegate.h */,
 				96B13CAE1AB349B200CD3790 /* AppDelegate.m */,
 				96B13CB01AB349B200CD3790 /* Main.storyboard */,
+				96B13CB41AB349B200CD3790 /* ViewController.m */,
 				96B13CB31AB349B200CD3790 /* ViewController.h */,
 				967251C51AB893A7002EDAC1 /* Model */,
-				96B13CB41AB349B200CD3790 /* ViewController.m */,
 				96B13CB61AB349B200CD3790 /* Images.xcassets */,
 				96B13CA51AB349B100CD3790 /* Supporting Files */,
 			);
@@ -262,7 +267,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				967251C81AB893EA002EDAC1 /* Title.m in Sources */,
+				96B5C9FF1ABB313600508580 /* Factory.m in Sources */,
+				96B5CA021ABB343700508580 /* Tile.m in Sources */,
 				96B13CB51AB349B200CD3790 /* ViewController.m in Sources */,
 				96B13CAF1AB349B200CD3790 /* AppDelegate.m in Sources */,
 				96B13CAB1AB349B100CD3790 /* main.m in Sources */,

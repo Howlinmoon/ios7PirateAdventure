@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "Factory.h"
+
 
 @interface ViewController ()
 
@@ -18,6 +20,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    Factory *factory = [[Factory alloc] init];
+    NSArray *tiles = [factory tiles];
+    NSLog(@"%@", tiles);
 }
 
 - (void)didReceiveMemoryWarning
