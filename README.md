@@ -1,6 +1,5 @@
 # ios7PirateAdventure
 
-Story Board is now setup - starting to work on the map elements
+Started creating the map: 4 arrays of 3 arrays of tiles.
 
-Left off here:  bitfountain.io/courses/the-complete-ios-7-course-learn-by-building-14-apps/lectures/4386
-
+Left off here:  bitfountain.io/courses/the-complete-ios-7-course-learn-by-building-14-apps/lectures/4388
