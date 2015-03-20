@@ -31,12 +31,6 @@
 }
 
 
-
-
-
-
-
-
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -44,18 +38,34 @@
 }
 
 - (IBAction)actionButtonPressed:(UIButton *)sender {
+
+
 }
 
+// clicking the button updates our co-ordinates correspondingly
 - (IBAction)northButtonPressed:(UIButton *)sender {
+    self.currentPoint = CGPointMake(self.currentPoint.x, self.currentPoint.y + 1);
+    [self updateButtons];
+    [self updateTile];
 }
 
 - (IBAction)westButtonPressed:(UIButton *)sender {
+    self.currentPoint = CGPointMake(self.currentPoint.x - 1, self.currentPoint.y);
+    [self updateButtons];
+    [self updateTile];
 }
 
 - (IBAction)southButtonPressed:(UIButton *)sender {
+    self.currentPoint = CGPointMake(self.currentPoint.x, self.currentPoint.y - 1);
+    [self updateButtons];
+    [self updateTile];
 }
 
 - (IBAction)eastButtonPressed:(UIButton *)sender {
+
+    self.currentPoint = CGPointMake(self.currentPoint.x + 1, self.currentPoint.y);
+    [self updateButtons];
+    [self updateTile];
 }
 
 
