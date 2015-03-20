@@ -13,6 +13,7 @@
 
 -(NSArray *) tiles {
 
+    // 0,0
     Tile *tile1 = [[Tile alloc] init];
     tile1.story = @"Story 1";
 
