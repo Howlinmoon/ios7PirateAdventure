@@ -21,8 +21,11 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     Factory *factory = [[Factory alloc] init];
-    NSArray *tiles = [factory tiles];
-    NSLog(@"%@", tiles);
+    self.tiles = [factory tiles];
+    //NSLog(@"%@", self.tiles);
+    self.currentPoint = CGPointMake(0, 0);
+    NSLog(@"%f, %f", self.currentPoint.x, self.currentPoint.y);
+    
 }
 
 - (void)didReceiveMemoryWarning

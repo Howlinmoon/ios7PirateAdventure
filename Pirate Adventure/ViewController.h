@@ -10,6 +10,12 @@
 
 @interface ViewController : UIViewController
 
+// Instance vars
+@property (nonatomic) CGPoint currentPoint;
+@property (strong, nonatomic) NSArray *tiles;
+
+
+
 
 // IBOutlets
 @property (strong, nonatomic) IBOutlet UIImageView *backgroundImageView;
