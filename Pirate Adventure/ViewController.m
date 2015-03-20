@@ -72,6 +72,7 @@
 -(void) updateTile {
     Tile * tileModel = [[self.tiles objectAtIndex:self.currentPoint.x] objectAtIndex:self.currentPoint.y];
     self.storyLabel.text = tileModel.story;
+    self.backgroundImageView.image = tileModel.backgroundImage;
 }
 
 
