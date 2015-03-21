@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Armor : UIView
+@interface Armor : NSObject
 
 @property (strong, nonatomic) NSString *name;
 @property (nonatomic) int health;

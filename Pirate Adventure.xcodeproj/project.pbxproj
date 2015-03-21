@@ -21,6 +21,7 @@
 		9651CA3B1ABC8884009854CA /* PirateWeapons.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9651CA2F1ABC8884009854CA /* PirateWeapons.jpeg */; };
 		966215791ABD142100D5078D /* Weapon.m in Sources */ = {isa = PBXBuildFile; fileRef = 966215781ABD142100D5078D /* Weapon.m */; };
 		9662157C1ABD145D00D5078D /* Armor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9662157B1ABD145D00D5078D /* Armor.m */; };
+		9662157F1ABD162600D5078D /* Character.m in Sources */ = {isa = PBXBuildFile; fileRef = 9662157E1ABD162600D5078D /* Character.m */; };
 		96B13C9F1AB349B100CD3790 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B13C9E1AB349B100CD3790 /* Foundation.framework */; };
 		96B13CA11AB349B100CD3790 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B13CA01AB349B100CD3790 /* CoreGraphics.framework */; };
 		96B13CA31AB349B100CD3790 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B13CA21AB349B100CD3790 /* UIKit.framework */; };
@@ -66,6 +67,8 @@
 		966215781ABD142100D5078D /* Weapon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Weapon.m; sourceTree = "<group>"; };
 		9662157A1ABD145D00D5078D /* Armor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Armor.h; sourceTree = "<group>"; };
 		9662157B1ABD145D00D5078D /* Armor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Armor.m; sourceTree = "<group>"; };
+		9662157D1ABD162600D5078D /* Character.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Character.h; sourceTree = "<group>"; };
+		9662157E1ABD162600D5078D /* Character.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Character.m; sourceTree = "<group>"; };
 		96B13C9B1AB349B100CD3790 /* Pirate Adventure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pirate Adventure.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96B13C9E1AB349B100CD3790 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		96B13CA01AB349B100CD3790 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -144,6 +147,8 @@
 				966215771ABD142100D5078D /* Weapon.h */,
 				966215781ABD142100D5078D /* Weapon.m */,
 				9662157A1ABD145D00D5078D /* Armor.h */,
+				9662157D1ABD162600D5078D /* Character.h */,
+				9662157E1ABD162600D5078D /* Character.m */,
 				9662157B1ABD145D00D5078D /* Armor.m */,
 			);
 			name = Model;
@@ -336,6 +341,7 @@
 				9662157C1ABD145D00D5078D /* Armor.m in Sources */,
 				96B5C9FF1ABB313600508580 /* Factory.m in Sources */,
 				96B5CA021ABB343700508580 /* Tile.m in Sources */,
+				9662157F1ABD162600D5078D /* Character.m in Sources */,
 				96B13CB51AB349B200CD3790 /* ViewController.m in Sources */,
 				966215791ABD142100D5078D /* Weapon.m in Sources */,
 				96B13CAF1AB349B200CD3790 /* AppDelegate.m in Sources */,

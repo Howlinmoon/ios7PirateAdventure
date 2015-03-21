@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Weapon : UIView
+@interface Weapon : NSObject
 
 @property (strong, nonatomic) NSString *name;
 @property (nonatomic) int damage;
