@@ -24,7 +24,7 @@
     tile2.backgroundImage = [UIImage imageNamed:@"PirateBlacksmith.jpeg"];
     
     Tile *tile3 = [[Tile alloc] init];
-    tile3.story = @"A mysterious doc appears on the horizon. Should we stop and ask for directions?";
+    tile3.story = @"A mysterious dock appears on the horizon. Should we stop and ask for directions?";
     tile3.backgroundImage = [UIImage imageNamed:@"PirateFriendlyDock.jpg"];
     
     NSMutableArray *firstColumn = [[NSMutableArray alloc] init];
