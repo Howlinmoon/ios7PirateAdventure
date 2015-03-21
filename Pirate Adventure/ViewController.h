@@ -7,12 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Character.h"
 
 @interface ViewController : UIViewController
 
 // Instance vars
 @property (nonatomic) CGPoint currentPoint;
 @property (strong, nonatomic) NSArray *tiles;
+@property (strong, nonatomic) Character *character;
+
 
 
 
