@@ -89,5 +89,23 @@
     return tiles;
 }
 
+// This creates an initial character with a health of 100,
+// an armor type of cloak with a helath bonus of 5,
+// and a weapon type of "Fists" with a damage of 10.
+-(Character *) character {
+    Character *character = [[Character alloc] init];
+    character.health = 100;
+    Armor *armor = [[Armor alloc] init];
+    armor.name = @"Cloak";
+    armor.health = 5;
+    character.armor = armor;
+    Weapon *weapon = [[Weapon alloc] init];
+    weapon.name = @"Fists";
+    weapon.damage = 10;
+    character.weapon = weapon;
+    return character;
+}
+
+
 
 @end
