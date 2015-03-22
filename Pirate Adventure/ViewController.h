@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "Character.h"
+#import "Boss.h"
 
 @interface ViewController : UIViewController
 
@@ -15,6 +16,7 @@
 @property (nonatomic) CGPoint currentPoint;
 @property (strong, nonatomic) NSArray *tiles;
 @property (strong, nonatomic) Character *character;
+@property (strong, nonatomic) Boss *boss;
 
 
 

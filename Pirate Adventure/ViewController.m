@@ -23,6 +23,8 @@
     Factory *factory = [[Factory alloc] init];
     self.tiles = [factory tiles];
     self.character = [factory character];
+    self.boss = [factory boss];
+    
     //NSLog(@"%@", self.tiles);
     self.currentPoint = CGPointMake(0, 0);
     [self updateCharacterStatsForAmor:nil withWeapons:nil withHealthEffect:0];
@@ -41,6 +43,10 @@
 
 - (IBAction)actionButtonPressed:(UIButton *)sender {
     Tile *tile = [[self.tiles objectAtIndex:self.currentPoint.x] objectAtIndex:self.currentPoint.y];
+    if (tile.healthEffect == -15) {
+        self.boss.health = self.boss.health - self.character.damage;
+        
+    }
     [self updateCharacterStatsForAmor:tile.armor withWeapons:tile.weapon withHealthEffect:tile.healthEffect];
     [self updateTile];
 }
