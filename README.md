@@ -1,9 +1,16 @@
 # ios7PirateAdventure
 
-Left off here:
-bitfountain.io/courses/the-complete-ios-7-course-learn-by-building-14-apps/lectures/4392
+The Pirate Adventure Game is now complete.
+The player navigates around the map interacting with what he finds on each tile.
+Eventually, the player finds the Pirate Boss - and fights him.
 
+Enhancement ideas:
 
-The Map is now displaying a different picture for each tile and different cell.
-The transparency of the image views needs to be adjusted, they are way too opaque at this time.
+Randomize the tiles - so the player doesn't always go LEFT-RIGHT-UP for example.
+
+Randomize the starting health of the pirate
+
+Do not allow the player to leave the Boss Pirate tile
+
+Only enable the Action button for one usage per tile.
 
