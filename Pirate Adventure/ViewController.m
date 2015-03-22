@@ -25,6 +25,7 @@
     self.character = [factory character];
     //NSLog(@"%@", self.tiles);
     self.currentPoint = CGPointMake(0, 0);
+    [self updateCharacterStatsForAmor:nil withWeapons:nil withHealthEffect:0];
     NSLog(@"%f, %f", self.currentPoint.x, self.currentPoint.y);
     [self updateTile];
     [self updateButtons];
@@ -39,8 +40,9 @@
 }
 
 - (IBAction)actionButtonPressed:(UIButton *)sender {
-
-
+    Tile *tile = [[self.tiles objectAtIndex:self.currentPoint.x] objectAtIndex:self.currentPoint.y];
+    [self updateCharacterStatsForAmor:tile.armor withWeapons:tile.weapon withHealthEffect:tile.healthEffect];
+    [self updateTile];
 }
 
 // clicking the button updates our co-ordinates correspondingly
