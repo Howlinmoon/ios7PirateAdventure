@@ -60,5 +60,6 @@
 
 - (IBAction)eastButtonPressed:(UIButton *)sender;
 
+- (IBAction)resetButtonPressed:(UIButton *)sender;
 
 @end

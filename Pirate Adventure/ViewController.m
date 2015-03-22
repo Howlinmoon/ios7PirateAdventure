@@ -41,6 +41,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - IBAction
+
 - (IBAction)actionButtonPressed:(UIButton *)sender {
     Tile *tile = [[self.tiles objectAtIndex:self.currentPoint.x] objectAtIndex:self.currentPoint.y];
     if (tile.healthEffect == -15) {
@@ -86,6 +88,13 @@
     [self updateTile];
 }
 
+- (IBAction)resetButtonPressed:(UIButton *)sender {
+    self.character = nil;
+    self.boss = nil;
+    [self viewDidLoad];
+}
+
+#pragma mark - helper methods
 
 -(void) updateTile {
     Tile * tileModel = [[self.tiles objectAtIndex:self.currentPoint.x] objectAtIndex:self.currentPoint.y];
