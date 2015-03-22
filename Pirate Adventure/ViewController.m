@@ -78,7 +78,8 @@
     self.damageLabel.text = [NSString stringWithFormat:@"%i", self.character.damage];
     self.armorLabel.text = self.character.armor.name;
     self.weaponLabel.text = self.character.weapon.name;
-    //self.actionButton.text = self.actionButtonName;
+    [self.actionButton setTitle:tileModel.actionButtonName forState:UIControlStateNormal];
+    
     
 }
 
@@ -100,5 +101,21 @@
     }
 }
 
+
+-(void)updateCharacterStatsForAmor:(Armor *)armor withWeapons:(Weapon *) weapon withHealthEffect:(int)healthEffect {
+    if (armor != nil) {
+        self.character.health = self.character.health - self.character.armor.health + armor.health;
+        self.character.armor = armor;
+    } else if (weapon != nil) {
+        self.character.damage = self.character.damage - self.character.weapon.damage + weapon.damage;
+        self.character.weapon = weapon;
+    } else if (healthEffect != 0) {
+        self.character.health = self.character.health + healthEffect;
+    } else {
+        self.character.health = self.character.health + self.character.armor.health;
+        self.character.damage = self.character.damage + self.character.weapon.damage;
+
+    }
+}
 
 @end

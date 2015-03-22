@@ -110,7 +110,7 @@
     
     Tile *tile12 = [[Tile alloc] init];
     tile12.story = @"Your final face off with the Pirate Boss!";
-    tile12.backgroundImage = [UIImage imageNamed:@"PirateBoss.jpg"];
+    tile12.backgroundImage = [UIImage imageNamed:@"PirateBoss.jpeg"];
     tile12.healthEffect = -15;
     tile12.actionButtonName = @"Fight";
     
