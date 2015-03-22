@@ -48,6 +48,15 @@
         
     }
     [self updateCharacterStatsForAmor:tile.armor withWeapons:tile.weapon withHealthEffect:tile.healthEffect];
+    
+    if (self.character.health <= 0) {
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Death Message" message:@"You have died please restart the game!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [alertView show];
+    } else if (self.boss.health <= 0) {
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Victory Message" message:@"You defeated the evil Pirate Boss!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [alertView show];
+    }
+    
     [self updateTile];
 }
 
