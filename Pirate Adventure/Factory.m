@@ -142,6 +142,11 @@
     return character;
 }
 
+-(Boss *) boss {
+    Boss *boss = [[Boss alloc] init];
+    boss.health = 65;
+    return boss;
+}
 
 
 @end
