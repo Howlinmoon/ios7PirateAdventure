@@ -78,6 +78,7 @@
     self.damageLabel.text = [NSString stringWithFormat:@"%i", self.character.damage];
     self.armorLabel.text = self.character.armor.name;
     self.weaponLabel.text = self.character.weapon.name;
+    //self.actionButton.text = self.actionButtonName;
     
 }
 
